@@ -5,6 +5,7 @@ body {
 	text-align: center;
 	background-color: #4fbdb5;
 	overflow: hidden;
+	color: #fff;
 }
 
 .content {
@@ -35,15 +36,16 @@ h1, h2 {
 	margin: 0;
 	margin-left: 2%;
 	padding: 0;
-	color: #fff;
 }
 
 H1 {
 	font-weight: 600;
+	font-size: 48px;
 }
 
 H2 {
 	font-weight: 300;
+	font-size: 28px;
 }
 
 .aboutMe {
@@ -70,10 +72,19 @@ H2 {
 	float: left;
 	width: 30%;
 	margin: 1%;
+	background-color: #4fbdb5;
 }
 
 .cell IMG {
 	position: relative;
 	width: 100%;
 	height: auto;
+}
+
+.title {
+	margin: 2%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 300;
 }
