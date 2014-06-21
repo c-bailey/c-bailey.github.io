@@ -68,7 +68,7 @@ H2 {
 	display: inline;
 }
 
-a {
+.menu a {
 	text-decoration: none;
 	padding: .2em 1em;
 }
