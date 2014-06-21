@@ -20,6 +20,7 @@ body {
 	position: relative;
 	width: 100%;
 	background-color:#F96876; 
+	overflow: hidden;
 }
 
 .topPanel IMG {
@@ -73,6 +74,9 @@ H2 {
 	text-decoration: none;
 	padding: .2em 1em;
 	color: #fff;
+	background-color: #f96876;
+	border-radius: 5em;
+	margin: 1em;
 }
 
 .interestGrid {
