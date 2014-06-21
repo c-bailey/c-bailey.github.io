@@ -60,6 +60,19 @@ H2 {
 	border-radius: 10px;
 }
 
+.menu {
+	list-style-type: none;
+}
+
+.menu ul li {
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+	padding: .2em 1em;
+}
+
 .interestGrid {
 	position: relative;
 	width: 100%;
