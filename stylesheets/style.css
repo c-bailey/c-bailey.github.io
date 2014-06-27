@@ -29,7 +29,7 @@ body {
 	margin: 0.5%;
 }
 
-h1, h2 {
+.topPanel h1, .topPanel h2 {
 	position: relative;
 	float: left;
 	margin: 0;
@@ -37,17 +37,17 @@ h1, h2 {
 	padding: 0;
 }
 
-h1 {
+.topPanel h1 {
 	font-weight: 600;
 	font-size: 3em;
 }
 
-h2 {
+.topPanel h2 {
 	font-weight: 300;
 	font-size: 1.5em;
 }
 
-.aboutMe {
+.sectionHeader .aboutMe {
 	position: absolute;
 	top: -25%;
 	color: #fff;
