@@ -118,3 +118,13 @@ footer {
 	float: right;
 	margin-right: 2%;
 }
+
+@media (max-width: 600px) {
+	.cell IMG {
+		display: none;
+	}
+
+	.cell {
+		width: 100%;
+	}
+}
