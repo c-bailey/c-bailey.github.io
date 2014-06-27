@@ -104,6 +104,11 @@ ul li {
 	font-weight: 300;
 }
 
+.sectionHeader {
+	width: 100%;
+	background-color: #4fbdb5;
+}
+
 footer {
 	float: right;
 	margin-right: 2%;
