@@ -57,6 +57,7 @@ body {
 	background-color:#F96876;
 	margin: 0;
 	border-radius: 10px;
+	z-index: 1;
 }
 
 ul li {
