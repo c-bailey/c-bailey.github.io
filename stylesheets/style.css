@@ -11,8 +11,7 @@ body {
 	width: 100%;
 	max-width: 1024px;
 	overflow: hidden;
-	margin: 0px auto;
-	background-color:#ADEDE9; 
+	margin: 0px auto; 
 }
 
 .topPanel {
@@ -24,6 +23,7 @@ body {
 .topPanel IMG {
 	position: relative;
 	float: left;
+/*	width: 100%;*/
 	width: 15%;
 	border-radius: 50%;
 	margin: 1%;
@@ -47,9 +47,18 @@ body {
 	font-size: 1.5em;
 }
 
+.splitter {
+	width: 80%;
+	height: .1em;
+	position: relative;
+	float: left;
+	margin: 2% 10%;
+	background-color: #fff;
+}
+
 .aboutMe {
 	position: absolute;
-	top: -10px;
+	top: 0;
 	color: #fff;
 	padding: 1%;
 	padding-right: 20px;
@@ -82,16 +91,16 @@ ul li {
 	display: block;
 }
 
-.cell {
+.cell, nav a {
 	position: relative;
 	float: left;
 	width: 29.333%;
 	margin: 2%;
-	background-color: #4fbdb5;
+	background-color: #76D3CF;
 }
 
-.cell:hover {
-	background-color: #78d7d0;
+.cell:hover, nav a:hover {
+	background-color: #29a29d;
 }
 
 .cell IMG {
@@ -100,12 +109,16 @@ ul li {
 	height: auto;
 }
 
-.title {
+.title, nav a {
 	margin: 2%;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 2em;
 	font-weight: 300;
+}
+
+.active, .active:hover {
+	background-color: #037470;
 }
 
 .sectionHeader {
@@ -119,9 +132,22 @@ ul li {
 	margin-bottom: .125em;
 }
 
+.projectContent.selected {
+	display: block;
+}
+
+.projectContent {
+	display: none;
+}
+
 footer {
 	float: right;
 	margin-right: 2%;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
 }
 
 @media (max-width: 600px) {
