@@ -6,6 +6,10 @@
 		<meta charset="utf-8">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+		<script src="js/raphael-min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/actions.js"></script>
+		
 	</head>
 	<body>
 	<div class="content">
@@ -17,8 +21,6 @@
 			<!-- <img src="images/logo.png"> -->
 		</div>
 
-		<div style="clear:both;"></div>
-
 		<div class="interestGrid">
 			<div class="aboutMe">
 				About Me &lt; &lt; Age: 20 years old | Education: Olin College 2016 | Major: Electrical &amp; Computer Engineering    
@@ -26,6 +28,10 @@
 			<div class='sectionHeader'>
 				Explore my Interests
 			</div>
+
+			<div id="hexgrid"></div>
+			<script src="js/raph.js"></script>
+
 			<div class="cell">
 				<a href="#codeSection"><img src="images/duck.jpg"></a>
 				<div class="title">Code</div>
@@ -38,15 +44,15 @@
 				<a href="#desSection"><img src="images/duck.jpg"></a>
 				<div class="title">Design</div>
 			</div>
-			<div class="cell">
+			<div class="cell no">
 				<a href="#vidSection"><img src="images/duck.jpg"></a>
 				<div class="title">Videography</div>
 			</div>
-			<div class="cell">
+			<div class="cell no">
 				<a href="#musicSection"><img src="images/duck.jpg"></a>
 				<div class="title">Music</div>
 			</div>
-			<div class="cell">
+			<div class="cell no">
 				<a href="#writSection"><img src="images/duck.jpg"></a>
 				<div class="title">Writing</div>
 			</div>
@@ -74,8 +80,9 @@
 						This is all about Proj 3
 					</div>
 				</div>
+				<div class="splitter"></div>
 			</section>
-			<div class="splitter"></div>
+			
 			<div id="elecSection" class='sectionHeader'>Electrical</div>
 			<section class="tabs">
 				<nav id="elecTitles">
@@ -94,8 +101,9 @@
 						This is all about Proj 3
 					</div>
 				</div>
+				<div class="splitter"></div>
 			</section>
-			<div class="splitter"></div>
+			
 			<div class='sectionHeader' id="desSection">Design</div>
 			<section class="tabs">
 				<nav id="desTitles">
@@ -114,10 +122,11 @@
 						This is all about Proj 3
 					</div>
 				</div>
+				<div class="splitter"></div>
 			</section>
-			<div class="splitter"></div>
-			<div id="vidSection" class='sectionHeader'>Videography</div>
-			<section class="tabs">
+			
+			<div id="vidSection" class='sectionHeader no'>Videography</div>
+			<section class="tabs no">
 				<nav id="vidTitles">
 					<a id="proj1v" href="javascript:void(0)" class="active">Project 1</a>
 					<a id="proj2v" href="javascript:void(0)" class>Project 2</a>
@@ -134,10 +143,11 @@
 						This is all about Proj 3
 					</div>
 				</div>
+				<div class="splitter"></div>
 			</section>
-			<div class="splitter"></div>
-			<div id="musicSection" class='sectionHeader'>Music</div>
-			<section class="tabs">
+			
+			<div id="musicSection" class='sectionHeader no'>Music</div>
+			<section class="tabs no">
 				<nav id="musicTitles">
 					<a id="proj1m" href="javascript:void(0)" class="active">Project 1</a>
 					<a id="proj2m" href="javascript:void(0)" class>Project 2</a>
@@ -154,10 +164,11 @@
 						This is all about Proj 3
 					</div>
 				</div>
+				<div class="splitter"></div>
 			</section>
-			<div class="splitter"></div>
-			<div id="writSection" class='sectionHeader'>Writing</div>
-			<section class="tabs">
+			
+			<div id="writSection" class='sectionHeader no'>Writing</div>
+			<section class="tabs no">
 				<nav id="writTitles">
 					<a id="proj1w" href="javascript:void(0)" class="active">Project 1</a>
 					<a id="proj2w" href="javascript:void(0)" class>Project 2</a>
@@ -187,8 +198,7 @@
 			
 		</footer>
 
-		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="js/actions.js"></script>
+		
 	</div>
 	</body>
 
