@@ -15,6 +15,12 @@ body {
 	text-align: center;
 	color: #fff;
 	background-color: #ddd;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 
 }
 
@@ -24,7 +30,7 @@ body {
 	overflow: hidden;
 	margin: 0px auto;
 	position: relative; 
-	background-color: #777;
+	background-color: #ddd;
 }
 
 .topPanel {
@@ -82,10 +88,24 @@ body {
 	z-index: 1;
 }
 
-#hexgrid {
-	text-transform: uppercase;
-	font-size: 2em;
-	font-weight: 300;
+.grid {
+	position: relative;
+	width: 100%;
+}
+
+.gridItem {
+	position: relative;
+	width: 45%;
+	margin: 2%;
+	background-color: #fff;
+}
+
+.gridItem IMG {
+	width: 100%;
+}
+
+.itemDesc {
+	width: 100%;
 }
 
 ul li {
@@ -103,68 +123,6 @@ ul li {
 	margin: 1em;
 }
 
-.interestGrid {
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-	display: block;
-}
-
-.cell, nav a {
-	position: relative;
-	float: left;
-	width: 29.333%;
-	margin: 2%;
-	background-color: #76D3CF;
-}
-
-.cell:hover, nav a:hover {
-	background-color: #29a29d;
-}
-
-.cell IMG {
-	position: relative;
-	width: 100%;
-	height: auto;
-}
-
-.title, nav a {
-	margin: 2%;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 2em;
-	font-weight: 300;
-}
-
-.active, .active:hover {
-	background-color: #037470;
-}
-
-.sectionHeader {
-	position: relative;
-	float: left;
-	width: 100%;
-	background-color: #4fbdb5;
-	font-weight: 600;
-	font-size: 3em;
-	margin-top: .125em;
-	margin-bottom: .125em;
-}
-
-.tabs {
-	position: relative;
-	float: left;
-	overflow: hidden;
-	width: 100%;
-}
-
-.projectContent.selected {
-	display: block;
-}
-
-.projectContent {
-	display: none;
-}
 
 footer {
 	float: right;

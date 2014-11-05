@@ -31,3 +31,51 @@ hex3.attr({ fill:'#4fbdb5', stroke:'none' })
 hex.transform('t400, 182');
 hex2.transform('t400, 448');
 hex3.transform('t170, 315');
+
+hex.hover(function() {
+	hex.attr({fill: '#e12436'});
+	},
+	function() {
+		hex.attr({fill: '#f96876'})
+	}
+);
+
+text.hover(function() {
+	hex.attr({fill: '#e12436'});
+	},
+	function() {
+		hex.attr({fill: '#f96876'})
+	}
+);
+
+hex2.hover(function() {
+	hex2.attr({fill: '#abdd23'});
+	},
+	function() {
+		hex2.attr({fill: '#d0f667'})
+	}
+);
+
+text2.hover(function() {
+	hex2.attr({fill: '#abdd23'});
+	},
+	function() {
+		hex2.attr({fill: '#d0f667'})
+	}
+);
+
+hex3.hover(function() {
+	hex3.attr({fill: '#178f86'});
+	},
+	function() {
+		hex3.attr({fill: '#4fbdb5'})
+	}
+);
+
+text3.hover(function() {
+	hex3.attr({fill: '#178f86'});
+	},
+	function() {
+		hex3.attr({fill: '#4fbdb5'})
+	}
+);
