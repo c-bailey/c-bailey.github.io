@@ -234,4 +234,4 @@ var fullAnimation = function() {
     firstLevelUp();
     window.setTimeout(secondLevelUp,duration);
     window.setTimeout(finalLevelUp,duration*2);
-}   
+}
