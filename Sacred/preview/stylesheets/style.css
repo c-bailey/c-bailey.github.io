@@ -1,0 +1,762 @@
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
+pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
+
+/*WHOLE PAGE STYLING*/
+
+body {
+	font-family: Georgia;
+	font-weight: 400;
+	background-color: #000;
+	-webkit-text-size-adjust: none;
+}
+
+footer {
+	padding: 2em;
+	padding-right: 1em;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+a img {
+	border: 0;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+.wholeContainer {
+	max-width: 1024px;
+	overflow: hidden;
+	margin: auto;
+}
+
+/*WIDTHS*/
+.wholeContainer, .topContainer, #grid2, .main, .details, .logo,
+.logo IMG, .cell IMG, .subcell IMG, .promoHolder IMG,
+#ad-mobile, .shop { width: 100%; }
+
+/*FONT SETTINGS*/
+.time, .subcell h6, .subcell p, .premiere h2, .premiere p, .vidInfo p.description,
+.add-container h3, .shop, footer, .airdate { font-family: 'Source Sans Pro' }
+
+/*WHOLE PAGE -- recurring classes*/
+/*VIDEO BUTTON*/
+.promoHolder .button, .subcell .button {
+	position: absolute;
+	width: 15%;
+	left: 42.5%;
+	top: 45%;
+	border-radius: 10%;
+}
+
+.subcell .button {
+	top: 35%;
+}
+
+.buttonZone {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.buttonZone:hover {
+	opacity: 0.7;
+}
+
+.mobile {
+	display: none;
+}
+
+.web {
+	display: block;
+}
+
+
+/*LOGO STYLING*/
+
+.logo, .logo IMG {
+	position: relative;
+}
+
+.premiere {
+	position: absolute;
+	top: 2.5em;
+	padding-left: 50%;
+	margin-left: -176px; /* with local listing -259px; */
+}
+
+.premiere h1, .premiere h2, .premiere p {
+	display: inline;
+}
+
+.premiere h1 {
+	font-weight: normal;
+}
+
+.premiere h1, .premiere p {
+	font-size: 1.25em;
+	color: #fff3B9;
+}
+
+.premiere h2, .premiere p {
+	font-weight: 200;
+	display: none;
+}
+
+.premiere h2, .premiere a {
+	font-size: 1.125em;
+	color: #fff;
+}
+
+/*TOP RETURN BUTTON*/
+.topReturn {
+	position: fixed;
+	width: 2.5em;
+	height: 1.5em;
+	left: -1em;
+	top: 20%;
+	background-color: #E4E4E4;
+	z-index: 10;
+	border-radius: 0.5em;
+	padding: 0.2em;
+}
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 0.6em solid transparent;
+	border-right: 0.6em solid transparent;
+	border-bottom: 1.039em solid black;
+	z-index: 2;
+	margin-left: 1.1em;
+	margin-top: .2em;
+}
+
+/*TOP CONTAINER STYLING*/
+.topContainer {
+	float: left;
+	position:relative;
+	margin-top: -150px;
+	overflow: hidden;
+}
+
+/*VIDEO CONTAINER*/
+
+.promoHolder {
+	float: left;
+	position: relative;
+	width: calc(95% - 400px);
+	display: inline-block;
+	margin-left: 5.97%;
+	vertical-align: top;
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+
+.videoContainer {
+	position: relative;
+	padding-bottom: 56%;
+	height: 0;
+	overflow: hidden;
+}
+
+.videoContainer iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.vidInfo {
+	float: left;
+	position: relative;
+	width: calc(95% - 400px);
+	margin-left: 5.97%;
+	overflow: hidden;
+}
+
+.vidInfo h1, .vidInfo h2, .vidInfo p {
+	color: #e6e7e8;
+	font-size: 1.125em;
+}
+
+.vidInfo h1, .vidInfo h2, .vidInfo p.schedule {
+	font-weight: bold;
+	display: inline-block;
+}
+
+.vidInfo h2 {
+	font-weight: 400;
+}
+
+.vidInfo h1 {
+	margin-right: 0.2em;
+}
+
+.vidInfo p {
+	line-height: 1.5em;
+	font-weight: 300;
+}
+
+.vidInfo p.schedule {
+	font-size: 1.25em;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.vidInfo p a {
+	color: #fff3B9; 
+}
+
+
+/*AD BLOCK*/
+.add-container {
+	top: 0;
+	width: 300px;
+	height: 365px;
+	padding-left: 1%;
+}
+
+.add-container h3 {
+	text-align: right;
+	font-size: 0.75em;
+	font-weight: 200;
+	margin-bottom: 0.4em;
+	color: #939598
+}
+
+#add-block {
+	position: static;
+	margin: auto;
+	margin-top: 2.125em;
+}
+
+#add-block-placer {
+	display: none;
+}
+
+#ad-mobile {
+	float: left;
+	display: block;
+}
+
+@media only screen and (min-width: 768px) {
+      .js #add-block-placer { display: inline; float: right; margin-right: 5%; vertical-align: top; }
+      .js #add-block { display: inline-block; position: absolute; z-index: 1;}
+    }
+
+.shop {
+	background-color: #aaa;
+	padding-top: 20px;
+	margin-top: 1em;
+	padding-bottom:20px;
+	text-align: center;
+	display: none;
+}
+
+/*MAIN GRID STYLING*/
+#grid {
+	position: relative;
+	width: 89.75%;
+	margin-left: 5.97%;
+	margin-right: 4.28%;
+	overflow: hidden;
+	margin-bottom: 2em;
+}
+
+.col {
+	position: relative;
+	float: left;
+	width: 31%;
+	margin-right: 1.69%;
+}
+
+.cell {
+	width: 96%;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	padding: 3%;
+	background-color: #3a3a3c;
+	overflow: hidden;
+}
+
+.cell:hover IMG {
+	opacity: .6;
+}
+
+/*MAIN GRID TEXT*/
+.airdate {
+	font-weight: 600;
+	font-size: 1.375em;
+	text-transform: uppercase;
+	color: #d1d2d4;
+	background-color: #58595b;
+}
+
+.airdate, .tune-in {
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+.country, .pilgrimage, .time, .country .web {
+	position: relative;
+	display: inline-block;
+}
+
+.pilgrimage {
+	font-size: 1.125em;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.country{
+	font-size: 1em;
+	color: #e6e7e8;
+}
+
+.time {
+	width: 100%;
+	font-weight: 200;
+	color: #d1d2d4;
+	font-size: 1em;
+}
+
+
+/*PILGRIMAGE SECTIONS STYLING*/
+
+#grid2 {
+	background-color: #000;
+}
+
+.details {
+	position: relative;
+	padding: 0;
+	font-size: 0;
+	overflow: hidden;
+}
+
+.mainGradient {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(15%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 15%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 15%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 15%,rgba(0,0,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 15%,rgba(0,0,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+/*SUB components*/
+
+.sub {
+	width: 89.75%;
+	margin-left: 5.97%;
+	margin-right: 4.28%;
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	margin-bottom: 5%;
+	vertical-align: bottom;
+}
+
+.subcell.text, .subcell.text.playable {
+	width: 31%;
+	background-color: #414141;
+}
+
+.one, .two, .three {
+	position: absolute;
+	bottom: 0;
+}
+
+.one {
+	left: 0;
+}
+
+.two {
+	left: 32.69%;
+}
+
+.three {
+	left:65.38%;
+}
+
+.subcell.text {
+	width: 25%;
+	text-align: left;
+	padding: 2% 3%;
+	font-size: 10pt;
+}
+
+.subcell.text.playable {
+	padding: 0;
+	background-color: #3a3a3c;
+}
+
+.videoHead {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	padding: 5%;
+	padding-right: 0;
+	height: 3em;
+}
+
+.title {
+	font-weight: normal;
+	font-size: 1.125em;
+	color: #fff;
+	display: inline-block;
+}
+
+.duration {
+	font-size: 1em;
+	color: #d1d2d4;
+	display: inline-block;
+}
+
+.subcell h4, .subcell h5, .subcell h6 {
+	margin-top: 0.5em;
+	color: #fff;
+}
+
+.subcell h4 {
+	text-transform: uppercase;
+	font-size: 1.875em;
+	text-align: left;
+}
+
+.subcell h5 {
+	font-size: 1.625em;
+	color: #e6e7e8
+}
+
+.subcell h6 {
+	font-weight: 300;
+	font-size: 1.375em;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+.subcell p {
+	font-weight: 200;
+	font-size: 1.25em;
+	line-height: 1.625em;
+	color: #bcbdc0;
+	margin-bottom: 0;
+	margin-top: 0.5em;
+}
+
+/* FOOTER STYLING*/
+
+span {
+	position: relative;
+	float: left;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 0.875em;
+	margin-bottom: 1em;
+	width: 100%;
+}
+
+span .seperator {
+	margin-left: 0.5em;
+	display: inline-block;
+}
+
+span a {
+	color: #bdac65;
+	margin: 0 0.5em;
+}
+
+.footercell {
+	position: relative;
+	float: left;
+	width: 20%;
+	margin-left: 2%;
+	margin-top: 1em;
+}
+
+.footercell IMG {
+	width: 100%;
+	max-width: 120px;
+	max-height: 50px;
+}
+
+.footercell.funding,.footercell.footTitle {
+	font-size: 0.75em;
+	line-height: 0.9375em;
+}
+
+.footercell.footTitle {
+	width: 15%;
+	color: #939598;
+	margin-left: 0;
+}
+
+.footercell.footTitle .produced {
+	margin-bottom: 1em;
+}
+
+.funding .footTitle {
+	margin-bottom: 1em;
+}
+
+
+/*BREAK POINT for subcell text*/
+@media only screen and (max-width: 790px) {
+
+	.time, .pilgrimage, .country {
+		display: block;
+		float: left;
+		width: 100%;
+	}
+
+	.country .web {
+		display: none;
+	}
+
+	.subcell h4 {
+		font-size: 1.75em;
+	}
+
+	.subcell h5 {
+		font-size: 1.5em;
+	}
+
+	.subcell h6 {
+		font-size: 1.25em;
+	}
+
+	.subcell p {
+		font-size: 1.125em;
+		line-height: 1.5em;
+	}
+
+	.topContainer {
+		margin-top: -140px;
+	}
+
+}
+
+/*AD BLOCK removal*/
+@media only screen and (max-width: 767px) {
+
+	.premiere {
+		position: relative;
+		float: left;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+		width: 100%;
+		margin-top: -170px;
+	}
+
+	.topContainer {
+		margin-top: -100px;
+	}
+
+	.promoHolder, .vidInfo {
+		width: 96%;
+		margin-left: 2%;
+	}
+}
+
+/*BREAK POINT for subcell text*/
+@media only screen and (max-width: 655px) {
+	.subcell h4 {
+		font-size: 1.5em;
+	}
+
+	.subcell h5 {
+		font-size: 1.375em;
+	}
+
+	.subcell h6 {
+		font-size: 1.125em;
+	}
+
+	.subcell p {
+		font-size: 1em;
+		line-height: 1.375em;
+	}
+
+	.footercell {
+		width: 40%;
+		margin-right: 2.5%;
+	}
+
+	.footercell.footTitle {
+		width: 25%;
+	}
+
+	.footercell.funding {
+		width: 60%;
+	}
+
+	.topContainer {
+		margin-top: -80px;
+	}
+
+}
+
+/*MOBILE TRANSFORM*/
+@media only screen and (max-width: 600px) {
+
+	.one, .two, .three {
+		position: relative;
+		float: left;
+		left:0;
+	}
+
+	.premiere h2, .premiere h1 {
+		display: block;
+		line-height: 0.75em;
+	}
+
+	.premiere h2 {
+		margin-top: .325em;
+		display: none;
+	}
+
+	.premiere p {
+		display: none;
+	}
+
+	.premiere {
+		margin-top: -100;
+	}
+
+	.topContainer {
+		margin-top: -50px;
+	}
+
+	#grid {
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.col {
+		width: 100%;
+		margin: 0;
+	}
+
+	.cell {
+		float: left;
+		width: 49%;
+		padding: 0;
+		margin-left: 1%;
+		background-color: #000;
+	}
+
+	.cell.airdate {
+		width: 100%;
+		background-color: #58595b;
+	}
+
+	.details {
+		background-color: #000;
+	}
+
+	.main, .web {
+		display: none;
+	}
+
+    .mobile {
+    	display: block;
+    }
+
+	.subcell h4 {
+		font-size: 1.875em;
+	}
+
+	.subcell h5 {
+		font-size: 1.625em;
+	}
+
+	.subcell h6 {
+		font-size: 1.375em;
+	}
+
+	.subcell p {
+		font-size: 1.25em;
+		line-height: 1.5em;
+	}
+
+	.sub {
+		position: relative;
+		margin: 0;
+		width: 100%;
+	}
+
+	.subcell {
+		width: 100%;
+		margin-top: 15px;
+	}
+
+	.subcell.text.playable {
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.subcell.text {
+		width: 90%;
+		margin-right: 0;
+		margin-left: 0;
+		padding: 5%;
+	}
+
+	.videoHead {
+		height: auto;
+		padding: 1em;
+	}
+
+	.airdate {
+		text-align: center;
+	}
+}
+
+/*Premiere text breakpoint*/
+@media only screen and (max-width: 530px) {
+
+	.premiere h1 {
+		font-size: 1em;
+	}
+
+	.premiere h2 {
+		font-size: .875em;
+	}
+
+	.topContainer {
+		margin-top: -20px;
+	}
+
+	.premiere {
+		margin-top: -120px;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	.premiere {
+		margin-top: -110px;
+	}
+}
